@@ -1,0 +1,6 @@
+#!/bin/bash
+# ClickUp CLI wrapper script
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "$SCRIPT_DIR/venv/bin/activate" 2>/dev/null
+python3 "$SCRIPT_DIR/clickup_cli.py" "$@"
