@@ -18,6 +18,8 @@ A command-line tool that enables Claude CLI users to interact with ClickUp direc
 - 📝 Update existing tasks
 - 🏢 View teams and workspaces
 - 👤 Check authenticated user
+- 📊 **NEW:** Detailed task tables with descriptions, comments, and subtasks
+- 👥 **NEW:** View tasks for specific team members
 - 🤖 Seamless integration with Claude CLI
 
 ## Prerequisites
@@ -87,6 +89,24 @@ python3 clickup_cli.py setup YOUR_PERSONAL_API_TOKEN
 
 # Update a task
 ./clickup update TASK_ID --status "in progress" --name "Updated task name"
+```
+
+### Enhanced Commands (NEW)
+
+```bash
+# View detailed tasks with table format
+python3 clickup_detailed.py
+
+# View tasks for a specific user
+python3 clickup_user_tasks.py jeremy
+python3 clickup_user_tasks.py rolla
+
+# The detailed view includes:
+# - Task descriptions and comments
+# - Subtasks and parent tasks
+# - Priority levels with visual indicators
+# - Due dates with overdue warnings
+# - Task locations (space/folder/list)
 ```
 
 ### Integration with Claude CLI
