@@ -1,0 +1,13 @@
+#!/bin/bash
+# ClickUp Natural Language Chat wrapper
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "$SCRIPT_DIR/venv/bin/activate" 2>/dev/null
+
+if [ $# -eq 0 ]; then
+    # Interactive mode
+    python3 "$SCRIPT_DIR/clickup_nlp.py"
+else
+    # Command mode
+    python3 "$SCRIPT_DIR/clickup_nlp.py" "$@"
+fi

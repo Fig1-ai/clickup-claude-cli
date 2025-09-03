@@ -20,6 +20,7 @@ A command-line tool that enables Claude CLI users to interact with ClickUp direc
 - 👤 Check authenticated user
 - 📊 **NEW:** Detailed task tables with descriptions, comments, and subtasks
 - 👥 **NEW:** View tasks for specific team members
+- 💬 **NEW:** Natural Language Processing interface - talk to ClickUp naturally!
 - 🤖 Seamless integration with Claude CLI
 
 ## Prerequisites
@@ -107,6 +108,32 @@ python3 clickup_user_tasks.py rolla
 # - Priority levels with visual indicators
 # - Due dates with overdue warnings
 # - Task locations (space/folder/list)
+```
+
+### Natural Language Interface (NEW)
+
+Talk to ClickUp using natural language instead of commands!
+
+```bash
+# Interactive chat mode
+./clickup-chat
+# Then type naturally: "show my tasks", "what's due today?", etc.
+
+# Direct natural language commands
+./clickup-chat "show my tasks"
+./clickup-chat "what do I need to do this week?"
+./clickup-chat "show jeremy's tasks"
+./clickup-chat "list urgent tasks"
+./clickup-chat "give me a task summary"
+
+# Examples of understood phrases:
+# - "what am I working on?"
+# - "show overdue tasks"
+# - "what is rolla working on?"
+# - "show tasks due tomorrow"
+# - "list high priority items"
+# - "who am i?"
+# - "show my teams"
 ```
 
 ### Integration with Claude CLI
